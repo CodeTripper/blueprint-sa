@@ -13,10 +13,12 @@ import org.springframework.context.annotation.PropertySources;
 })
 @Data
 public class Config{
-  @Value("${appname}")
+  @Value("${blueprint.appname}")
   private String appName;
-  @Value("${greeting.english}")
+  @Value("${blueprint.greeting.english}")
   private String englishGreeting;
-  @Value("${greeting.spanish}")
+  @Value("${blueprint.greeting.spanish}")
   private String spanishGreeting;
+  @Value("${blueprint.template.location}")
+  private String templateLocation;
 }
